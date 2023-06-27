@@ -58,6 +58,14 @@ if ($result->status) {
 Please note that the example above is just a demonstration, and you may need to adapt it to fit your specific integration requirements.
 
 
+You can refer to the YapıKredi Posnet Documentation for error codes and more detailed information. This package is not official and does not have any affiliation with Yapı Kredi or Posnet. The names Yapı Kredi and Posnet are owned by Yapı ve Kredi Bankası A.Ş. All rights reserved.
+
+
+
+
+
+
+
 
 Feel free to customize the README file as per your project's needs and provide additional information about the library, usage instructions, and any other relevant details.
 
