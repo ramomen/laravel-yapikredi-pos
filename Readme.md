@@ -9,7 +9,7 @@ This library utilizes the Yapı Kredi Posnet API to perform payment transactions
 1. Install the library into your Laravel project using `composer`:
 
 ````shell
-    composer require ramomen/yapikrediposlaravel
+    composer require ramomen/laravel-yapikredi-pos
 ````
 
 After the library is installed, you need to configure the following settings in your .env file:
