@@ -8,7 +8,6 @@ class YapiKredi
     private $merchantId;
     private $terminalId;
     private $mode;
-    private $posnet;
 
 
     /**
@@ -18,7 +17,6 @@ class YapiKredi
 
     public function __construct()
     {
-        $this->posnet = new YapiKredi;
         $this->merchantId = $_ENV['YAPIKREDI_MERCHANT_ID'] ?? '000000000000000';
         $this->terminalId = $_ENV['YAPIKREDI_TERMINAL_ID'] ?? '00000000';
 
@@ -54,7 +52,7 @@ class YapiKredi
         $multpoint = null,
         $extpoint = null
     ) {
-        $posnet = $this->posnet;
+        $posnet = new Posnet;
         $posnet->UseOpenssl();
         $posnet->SetURL($this->mode);
         $posnet->SetMid($this->merchantId);
