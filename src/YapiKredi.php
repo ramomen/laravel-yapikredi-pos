@@ -16,9 +16,9 @@ class YapiKredi
      * @param Posnet $posnet
      */
 
-    public function __construct(Posnet $posnet)
+    public function __construct()
     {
-        $this->posnet = $posnet;
+        $this->posnet = new YapiKredi;
         $this->merchantId = $_ENV['YAPIKREDI_MERCHANT_ID'] ?? '000000000000000';
         $this->terminalId = $_ENV['YAPIKREDI_TERMINAL_ID'] ?? '00000000';
 
